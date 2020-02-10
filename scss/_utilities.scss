@@ -14,3 +14,26 @@ $max-width: 1100px;
     @return #fff;
   }
 }
+
+$spaceamounts: (1, 2, 3, 4, 5);
+@each $space in $spaceamounts {
+  //all arond margin
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+
+  //vertical margin
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+
+  // all around Padding
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+
+  // vertical padding
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+}
